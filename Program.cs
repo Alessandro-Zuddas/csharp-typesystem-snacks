@@ -8,7 +8,10 @@
 //snack7();
 //snack8();
 //snack9();
-snack10();
+//snack10();
+snack11();
+
+
 
 
 
@@ -203,6 +206,32 @@ void snack10()
         foreach (var num in ints)
         {
             Console.Write($"{num}; ");
+        }
+    }
+}
+
+void snack11()
+{
+    Console.WriteLine("Inserisci la prima parola!");
+    var word1 = Console.ReadLine() ?? "";
+    Console.WriteLine("Inserisci la seconda parola!");
+    var word2 = Console.ReadLine() ?? "";
+
+    compareString(word1, word2);
+
+    void compareString(string word1, string word2)
+    {
+        if(word1.Length == word2.Length)
+        {
+            Console.WriteLine($"La parole sono di uguale lunghezza: {word1} , {word2}");
+        }
+        else if(word1.Length > word2.Length)
+        {
+            Console.WriteLine($"La parola più lunga è: {word1}");
+        }
+        else
+        {
+            Console.WriteLine($"La parola più lunga è: {word2}");
         }
     }
 }

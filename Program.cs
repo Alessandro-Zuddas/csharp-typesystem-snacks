@@ -1,6 +1,7 @@
 ﻿
 //snack1();
-snack2();
+//snack2();
+snack3();
 
 void snack1()
 {
@@ -43,4 +44,19 @@ void snack2()
     {
         Console.WriteLine("La seconda parola è più lunga!");
     }
+}
+
+void snack3()
+{
+    var sum = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        Console.WriteLine("Inserisci un numero per dieci volte!");
+        int userNumber = Convert.ToInt32(Console.ReadLine());
+
+        sum += userNumber;
+    }
+
+    Console.WriteLine($"La somma dei numeri inseriti è: {sum}");
 }

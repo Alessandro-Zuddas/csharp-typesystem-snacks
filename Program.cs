@@ -5,7 +5,8 @@
 //snack4();
 //snack5();
 //snack6();
-snack7();
+//snack7();
+snack8();
 
 void snack1()
 {
@@ -141,4 +142,20 @@ void snack7()
     {
         Console.WriteLine(numbers[i]);
     }
+}
+
+void snack8()
+{
+    int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
+    var sum = 0;
+
+    for(int i = 0; i < numbers.Length ; i++)
+    {
+        if (i % 2 != 0)
+        {
+            sum += numbers[i];
+        }
+    }
+
+    Console.WriteLine($"La somma dei numeri in posizioni dispari è: {sum}");
 }

@@ -4,7 +4,8 @@
 //snack3();
 //snack4();
 //snack5();
-snack6();
+//snack6();
+snack7();
 
 void snack1()
 {
@@ -116,5 +117,28 @@ void snack6()
     if (!wasFound)
     {
         Console.WriteLine("Mi dispiace non sei sulla lista");
+    }
+}
+
+void snack7()
+{
+    int[] numbers = { 6 };
+
+    for(int i = 0;i < 6 ;i++)
+    {
+        Console.WriteLine("Inserisci un numero per 6 volte!");
+        var userNumber = Convert.ToInt32(Console.ReadLine());
+        
+        if(userNumber % 2 != 0)
+        {
+            numbers[i] = userNumber;
+        }
+    }
+
+
+    Console.WriteLine("I numeri dispari sono: ");
+    for(int i = 0; i < numbers.Length; i++)
+    {
+        Console.WriteLine(numbers[i]);
     }
 }

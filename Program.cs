@@ -9,7 +9,8 @@
 //snack8();
 //snack9();
 //snack10();
-snack11();
+//snack11();
+snack12();
 
 
 
@@ -234,4 +235,25 @@ void snack11()
             Console.WriteLine($"La parola più lunga è: {word2}");
         }
     }
+}
+
+void snack12()
+{
+    Console.WriteLine("Inserisci un numero per sapere se è pari o dispari!");
+    var number = Convert.ToInt32(Console.ReadLine());
+
+    oddOrEven(number);
+
+    void oddOrEven(int number)
+    {
+        if(number % 2 == 0)
+        {
+            Console.WriteLine($"{number} è pari!");
+        }
+        else if (number % 2 != 0)
+        {
+            Console.WriteLine($"{number} è dispari!");
+        }
+    }
+
 }

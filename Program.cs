@@ -1,5 +1,5 @@
 ﻿
-//snack1();
+snack1();
 //snack2();
 //snack3();
 //snack4();
@@ -10,7 +10,7 @@
 //snack9();
 //snack10();
 //snack11();
-snack12();
+//snack12();
 
 
 

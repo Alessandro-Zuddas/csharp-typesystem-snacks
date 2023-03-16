@@ -6,7 +6,10 @@
 //snack5();
 //snack6();
 //snack7();
-snack8();
+//snack8();
+snack9();
+
+
 
 void snack1()
 {
@@ -158,4 +161,26 @@ void snack8()
     }
 
     Console.WriteLine($"La somma dei numeri in posizioni dispari è: {sum}");
+}
+
+void snack9()
+{
+    int[] numbers = { 50 };
+    var sum = 0;
+    int i = 0;
+
+    while(sum < 50)
+    {
+        Console.WriteLine("Inserisci dei numeri e verranno sommati!");
+        var userNumber = Convert.ToInt32(Console.ReadLine());
+
+        if (userNumber > 0)
+        {
+            numbers[i] = userNumber;
+        }
+
+        i++;
+    }
+
+    Console.WriteLine("Fine della corsa siamo a 50!");
 }

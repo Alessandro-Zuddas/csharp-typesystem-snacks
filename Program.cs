@@ -4,6 +4,7 @@
 //snack3();
 //snack4();
 //snack5();
+snack6();
 
 void snack1()
 {
@@ -91,5 +92,29 @@ void snack5()
     {
         userNumber++;
         Console.WriteLine(userNumber);
+    }
+}
+
+void snack6()
+{
+    string[] members = { "Alessandro", "Francesco", "Simone", "Riccardo", "Matteo" };
+
+    Console.WriteLine("Inserisci il tuo nome per vedere se sei in lista!");
+    var userName = Console.ReadLine();
+
+    var wasFound = false;
+
+    foreach(string member in members)
+    {
+        if(userName == member)
+        {    
+            Console.WriteLine("Benvenuto alla festa!");
+            wasFound = true;
+        }
+    }
+
+    if (!wasFound)
+    {
+        Console.WriteLine("Mi dispiace non sei sulla lista");
     }
 }

@@ -1,7 +1,8 @@
 ﻿
 //snack1();
 //snack2();
-snack3();
+//snack3();
+//snack4();
 
 void snack1()
 {
@@ -60,3 +61,19 @@ void snack3()
 
     Console.WriteLine($"La somma dei numeri inseriti è: {sum}");
 }
+
+void snack4()
+{
+    int[] numbers = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    var sum = 0;
+    double average;
+
+    for(int i = 0; i < numbers.Length ;i++)
+    {
+        sum += numbers[i];
+    }
+
+    average = sum / numbers.Length;
+    Console.WriteLine(average);
+}
+

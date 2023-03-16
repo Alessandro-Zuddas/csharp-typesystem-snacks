@@ -1,20 +1,84 @@
 ﻿
-snack1();
-//snack2();
-//snack3();
-//snack4();
-//snack5();
-//snack6();
-//snack7();
-//snack8();
-//snack9();
-//snack10();
-//snack11();
-//snack12();
+start();
 
+void start()
+{
 
+    Console.WriteLine();
 
+    Console.WriteLine("Quale snack vorresti usare?");
 
+   for(int i = 1; i < 12; i++)
+   {
+        Console.WriteLine($"Snack{i}");
+   }
+
+   Console.WriteLine("Digita il numero!");
+   var userNumber = Convert.ToInt32(Console.ReadLine());
+
+   switch (userNumber)
+   {
+       case 1:
+           snack1();
+           start();
+           break;
+
+       case 2:
+          snack2();
+            start();
+            break;
+
+        case 3:
+            snack3();
+            start();
+            break;
+
+        case 4:
+            snack4();
+            start();
+            break;
+
+        case 5:
+            snack5();
+            start();
+            break;
+
+        case 6:
+            snack6();
+            start();
+            break;
+
+        case 7:
+            snack7();
+            start();
+            break;
+
+        case 8:
+            snack8();
+            start();
+            break;
+
+        case 9:
+            snack9();
+            start();
+            break;
+
+        case 10:
+            snack10();
+            start();
+            break;
+
+        case 11:
+            snack11();
+            start();
+            break;
+
+        case 12:
+            snack12();
+            start();
+            break;
+    }
+}
 
 void snack1()
 {
@@ -133,7 +197,7 @@ void snack7()
 {
     int[] numbers = { 6 };
 
-    for(int i = 0;i < 6 ;i++)
+    for(int i = 0; i < 5 ;i++)
     {
         Console.WriteLine("Inserisci un numero per 6 volte!");
         var userNumber = Convert.ToInt32(Console.ReadLine());

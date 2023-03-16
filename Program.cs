@@ -3,6 +3,7 @@
 //snack2();
 //snack3();
 //snack4();
+//snack5();
 
 void snack1()
 {
@@ -77,3 +78,18 @@ void snack4()
     Console.WriteLine(average);
 }
 
+void snack5()
+{
+    Console.WriteLine("Inserisci un numero!");
+    var userNumber = Convert.ToInt32(Console.ReadLine());
+    
+    if(userNumber % 2 == 0)
+    {
+        Console.WriteLine("Il numero inserito è pari!");
+    }
+    else
+    {
+        userNumber++;
+        Console.WriteLine(userNumber);
+    }
+}

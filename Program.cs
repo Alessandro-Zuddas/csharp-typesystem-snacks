@@ -8,10 +8,12 @@ void start()
 
     Console.WriteLine("Quale snack vorresti usare?");
 
-   for(int i = 1; i < 12; i++)
+   for(int i = 1; i <= 12; i++)
    {
         Console.WriteLine($"Snack{i}");
    }
+
+   Console.WriteLine();
 
    Console.WriteLine("Digita il numero!");
    var userNumber = Convert.ToInt32(Console.ReadLine());
